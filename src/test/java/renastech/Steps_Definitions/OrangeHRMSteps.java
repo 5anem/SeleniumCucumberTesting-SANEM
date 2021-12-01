@@ -161,24 +161,27 @@ public class OrangeHRMSteps {
 
     }
     @Then("The user wants to enter email as {string}")
-    public void the_user_wants_to_enter_email_as(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void the_user_wants_to_enter_email_as(String email) {
+        WebElement emailBox=Driver.getDriver().findElement(By.id("addCandidate_email"));
+        emailBox.sendKeys(email);
+        CommonUtils.hardWait(1000);
     }
     @Then("The user wants to Consent to keep data")
     public void the_user_wants_to_consent_to_keep_data() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        WebElement consentBox=Driver.getDriver().findElement(By.id("addCandidate_consentToKeepData"));
+        CommonUtils.clickWithWait(consentBox);
     }
     @Then("The user wants to save")
     public void the_user_wants_to_save() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        WebElement saveBox=Driver.getDriver().findElement(By.id("btnSave"));
+        CommonUtils.clickWithWait(saveBox);
     }
     @Then("The user wants to verify that the user is created")
     public void the_user_wants_to_verify_that_the_user_is_created() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+       CommonUtils.hardWait(3000);
+        WebElement expected = Driver.getDriver().findElement(By.id("resultTable"));
+       Assert.assertTrue(expected.isDisplayed());
+       Driver.getDriver().close();
     }
 
 

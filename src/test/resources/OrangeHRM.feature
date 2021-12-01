@@ -1,5 +1,11 @@
 Feature:  We are creating this feature file to add Orange HRM Scenarios
 
+
+  Background:
+    Given The user wants to go to login
+    Then The user wants to click login
+
+
    @loginWithoutParams
   Scenario: Login to Orange HRM
     Given The user wants to go to orangeHRM application
@@ -76,12 +82,24 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
 
 
 
-  @configFile_Scenario
+  @configFile_Scenario   @BackgroundPractice
   Scenario: Login
-    Given The user wants to go to login
-    Then The user wants to click login
     And The user should be able to navigate dashboard
 
+  @Candidate  @BackgroundPractice
+  Scenario: Verify that we can create a candidate
+    Then The user wants to navigate recruitment
+    Then The user wants to see candidates
+    And The user wants to add a candidate
+    Then The user wants to enter first name as "erkan" and last name as "ozclk"
+    Then The user wants to enter email as "ozclk@renastech.com"
+    Then The user wants to Consent to keep data
+    Then The user wants to save
+    Then The user wants to verify that the user is created
+
+
+  Scenario: about nothing
+     Then the user want to do nothing
 
 
 
@@ -105,17 +123,7 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
 
 
 
-   @Candidate
-  Scenario: Verify that we can create a candidate
-    Given The user wants to go to login
-    Then The user wants to click login
-    Then The user wants to navigate recruitment
-    Then The user wants to see candidates
-    And The user wants to add a candidate
-    Then The user wants to enter first name as "erkan" and last name as "ozclk"
-    Then The user wants to enter email as "ozclk@renastech.com"
-    Then The user wants to Consent to keep data
-    Then The user wants to save
-    Then The user wants to verify that the user is created
+
+
 
 

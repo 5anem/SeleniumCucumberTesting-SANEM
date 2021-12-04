@@ -90,6 +90,7 @@ public class OrangeHRMSteps {
     @Then("The user wants to see add employee page")
     public void the_user_wants_to_see_add_employee_page() {
         WebElement addEmployee= Driver.getDriver().findElement(By.xpath("//a[.='Add Employee']"));
+        CommonUtils.hardWait(1000);
         addEmployee.click();
         CommonUtils.hardWait(2000);
     }
@@ -218,8 +219,39 @@ public class OrangeHRMSteps {
         lastName.sendKeys(dataTable.get("LastName"));
 
 
-        // Be back 8:05
+    }
+
+
+
+    @Then("The user wants to add login details")
+    public void the_user_wants_to_add_login_details(Map<String,String> dataTable) {
+
+        WebElement checkBox = Driver.getDriver().findElement(By.id("chkLogin"));
+        WebElement userName = Driver.getDriver().findElement(By.id("user_name"));
+        WebElement password = Driver.getDriver().findElement(By.id("user_password"));
+        WebElement rePassword = Driver.getDriver().findElement(By.id("re_password"));
+        WebElement status = Driver.getDriver().findElement(By.id("status"));
+
+
+        CommonUtils.clickWithWait(checkBox);
+        userName.sendKeys(dataTable.get("User Name"));
+        password.sendKeys(dataTable.get("Password"));
+        rePassword.sendKeys(dataTable.get("Password"));
+        CommonUtils.selectFromDropDown(status,dataTable.get("Status"));
+
+
+
+
+
+
+
+
+
+
 
     }
+
+
+
 
 }

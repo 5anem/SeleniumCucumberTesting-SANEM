@@ -54,6 +54,25 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
       Then The user should be able to see "Personal Details"
 
 
+       @Mapping_TC2
+      Scenario: Verify that add new employee with login credentials
+        Given The user wants to go to orangeHRM application
+        When The user wants to login orange HRM
+            |Username | Admin      |
+            |Password |Mv@UE0@dR3f@|
+        Then The user wants to click login
+        And The user should be able to navigate dashboard
+        Then The user wants to go to PIM page
+        Then The user wants to see add employee page
+        Then The user wants to add an employee
+            |FirstName|Tom1231223  |
+            |LastName |Jerry123123123|
+        Then The user wants to add login details
+            |User Name   | erkanozclk123|
+            |Password    |Erkan!123  |
+            |Status      |Disabled   |
+        Then The user wants to save the information
+        Then The user should be able to see "Personal Details"
 
 
 

@@ -178,4 +178,38 @@ public class CommonUtils {
     }
 
 
+
+    public static void selectFromDropDown(WebElement element,String text){
+
+        Select select = new Select(element);
+        select.selectByVisibleText(text);
+        try {
+            Thread.sleep(1000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

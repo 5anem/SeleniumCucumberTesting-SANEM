@@ -21,7 +21,7 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
     And The user should be able to navigate dashboard
 
 
-  @ForFun   @Anything  @Regression
+  @ForFun   @Anything  @Regression  @Maping
   Scenario:
     Given The user wants to go to orangeHRM application
     When The user wants to enter username as "Admin" and the password as "Mv@UE0@dR3f@"
@@ -191,6 +191,16 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
 
 
    @Hook
+  Scenario: Verify That the Hooks works fine
+    Given The user wants to login website
+    Then the user wants to verify that we can login
+
+  @Hook
+  Scenario: Verify That the Hooks works fine
+    Given The user wants to login website
+    Then the user wants to verify that we can login
+
+  @Hook
   Scenario: Verify That the Hooks works fine
     Given The user wants to login website
     Then the user wants to verify that we can login

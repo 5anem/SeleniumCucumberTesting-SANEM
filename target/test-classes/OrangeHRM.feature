@@ -1,19 +1,19 @@
 Feature:  We are creating this feature file to add Orange HRM Scenarios
 
 
-  Background:
-    Given The user wants to go to login
-    Then The user wants to click login
+#  Background:
+#    Given The user wants to go to login
+#    Then The user wants to click login
 
 
-   @loginWithoutParams
+   @loginWithoutParams   @Regression
   Scenario: Login to Orange HRM
     Given The user wants to go to orangeHRM application
     When The user wants to enter username and password
     Then The user wants to click login
     And The user should be able to navigate dashboard
 
- @LoginWithParams    @Anything  @ForFun
+ @LoginWithParams    @Anything  @ForFun  @Regression
   Scenario: Login with credz
     Given The user wants to go to orangeHRM application
     When The user wants to enter username as "Admin" and the password as "admin123"
@@ -21,7 +21,7 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
     And The user should be able to navigate dashboard
 
 
-  @ForFun   @Anything
+  @ForFun   @Anything  @Regression
   Scenario:
     Given The user wants to go to orangeHRM application
     When The user wants to enter username as "Admin" and the password as "Mv@UE0@dR3f@"
@@ -33,6 +33,37 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
     Then The user wants to add last name as "Jerry1"
     Then The user wants to save the information
     Then The user should be able to see "Personal Details"
+
+
+
+    # Data tables
+    @Maping
+    Scenario:
+      Given The user wants to go to orangeHRM application
+      When The user wants to login orange HRM
+           |Username | Admin      |
+           |Password |Mv@UE0@dR3f@|
+      Then The user wants to click login
+     And The user should be able to navigate dashboard
+      Then The user wants to go to PIM page
+      Then The user wants to see add employee page
+      Then The user wants to add an employee
+          |FirstName|Tom123  |
+          |LastName |Jerry123|
+      Then The user wants to save the information
+      Then The user should be able to see "Personal Details"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,6 +129,10 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
     Then The user wants to verify that the user is created
 
 
+  Scenario: about nothing
+     Then the user want to do nothing
+
+
 
 
 
@@ -116,6 +151,7 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
   ##    - QA Will create scenarios
 
   ## QA will start to test/Create coding
+
 
 
 

@@ -95,6 +95,9 @@ public class CommonUtils {
         return listOfStrings;
     }
 
+    /**
+     * This method is switching a specific window.
+     **/
     public boolean switchWindow() {
         String parent_win = Driver.getDriver().getWindowHandle();
         Set<String> windows = Driver.getDriver().getWindowHandles();
@@ -124,7 +127,9 @@ public class CommonUtils {
         });
     }
 
-
+    /**
+     * This method is scrolling a specific element.
+     **/
     public void scrollToElement(WebElement element){
 
         JavascriptExecutor js = ((JavascriptExecutor) Driver.getDriver());
@@ -133,14 +138,17 @@ public class CommonUtils {
     }
 
     /**
-     * This method is switch frame.
+     * This method is switch Iframe.
      **/
 
     public void switchFrame(String frameXpath) {
         Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath(frameXpath)));
     }
 
-    public void waitforpresenceofelement(By elementBy) {
+    /**
+     * This method will wait for presence of an element.
+     **/
+    public void waitForPresenceOfElement(By elementBy) {
         int timeout = Integer.parseInt(ConfigurationsReader.getProperty("waitTimeOut"));
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), timeout);
         wait.until(ExpectedConditions.presenceOfElementLocated(elementBy));

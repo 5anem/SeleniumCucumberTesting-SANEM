@@ -9,8 +9,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features ="src/test/resources",
         glue = "renastech/Steps_Definitions",
-        tags = " @BackgroundPractice",
+        tags = "@Maping",
         dryRun= false             // it will check if there is undifianed staps definitions
+
+
 )
 public class TestRunner {
 }

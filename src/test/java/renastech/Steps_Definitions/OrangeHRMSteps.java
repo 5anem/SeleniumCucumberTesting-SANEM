@@ -11,6 +11,8 @@ import renastech.utils.CommonUtils;
 import renastech.utils.ConfigurationsReader;
 import renastech.utils.Driver;
 
+import java.util.Map;
+
 public class OrangeHRMSteps {
 
 
@@ -184,5 +186,40 @@ public class OrangeHRMSteps {
        Driver.getDriver().close();
     }
 
+
+
+    @When("The user wants to login orange HRM")
+    public void the_user_wants_to_login_orange_hrm(Map<String,String> dataTable) {
+
+        System.out.println("This is Username :  "+dataTable.get("Username"));
+        System.out.println("This is password :"+dataTable.get("Password"));
+
+        WebElement username = Driver.getDriver().findElement(By.id("txtUsername"));
+        WebElement password = Driver.getDriver().findElement(By.id("txtPassword"));
+
+        username.sendKeys(dataTable.get("Username"));
+        password.sendKeys(dataTable.get("Password"));
+
+
+
+
+    }
+    @Then("The user wants to add an employee")
+    public void the_user_wants_to_add_an_employee(Map<String,String> dataTable) {
+
+        System.out.println("The First Name is : "+ dataTable.get("FirstName"));
+        System.out.println("The Last Name is : "+ dataTable.get("LastName"));
+
+        CommonUtils.waitForPageToLoad(10);
+        WebElement usernameBox = Driver.getDriver().findElement(By.id("firstName"));
+        usernameBox.sendKeys(dataTable.get("FirstName"));
+
+        WebElement lastName=Driver.getDriver().findElement(By.name("lastName"));
+        lastName.sendKeys(dataTable.get("LastName"));
+
+
+        // Be back 8:05
+
+    }
 
 }

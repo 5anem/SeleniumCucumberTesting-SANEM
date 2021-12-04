@@ -265,12 +265,36 @@ public class OrangeHRMSteps {
     @Then("The user wants to add an employee in a list way")
     public void the_user_wants_to_add_an_employee_in_a_list_way(List<List<String>>  dataTable) {
 
+        WebElement username= Driver.getDriver().findElement(By.id("firstName"));
+        WebElement lastName= Driver.getDriver().findElement(By.id("lastName"));
 
+        username.sendKeys(dataTable.get(0).get(0));
+        lastName.sendKeys(dataTable.get(0).get(1));
 
     }
     @Then("The user wants to add login details in a list way")
     public void the_user_wants_to_add_login_details_in_a_list_way(List<List<String>>  dataTable) {
+        WebElement username= Driver.getDriver().findElement(By.id("firstName"));
+        WebElement middleName=Driver.getDriver().findElement(By.id("middleName"));
+        WebElement lastName= Driver.getDriver().findElement(By.id("lastName"));
 
+        username.sendKeys(dataTable.get(0).get(0));
+        middleName.sendKeys(dataTable.get(0).get(1));
+        lastName.sendKeys(dataTable.get(0).get(2));
+    }
+
+
+
+
+    @Given("The user wants to login website")
+    public void the_user_wants_to_login_website() {
+        System.out.println("Test Test");
+    }
+    @Then("the user wants to verify that we can login")
+    public void the_user_wants_to_verify_that_we_can_login() {
+        System.out.println("Test Test");
+
+        CommonUtils.hardWait(5000);
     }
 
 

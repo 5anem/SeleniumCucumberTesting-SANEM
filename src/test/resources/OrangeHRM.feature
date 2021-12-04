@@ -75,6 +75,22 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
         Then The user should be able to see "Personal Details"
 
 
+           @List_TC1
+         Scenario: verify that add new employee with Login in List way
+           Given The user wants to go to orangeHRM application
+           When the user wants to login in list way
+               |Admin       |Mv@UE0@dR3f@|
+           Then The user wants to click login
+           And The user should be able to navigate dashboard
+           Then The user wants to go to PIM page
+           Then The user wants to see add employee page
+           Then The user wants to add an employee in a list way
+               |Tommm123| Jerryyyyy|
+           Then The user wants to add login details in a list way
+              |renastech123 | RenasTech2021 |Disabled|
+           Then The user wants to save the information
+           Then The user should be able to see "Personal Details"
+
 
 
 

@@ -11,6 +11,7 @@ import renastech.utils.CommonUtils;
 import renastech.utils.ConfigurationsReader;
 import renastech.utils.Driver;
 
+import java.util.List;
 import java.util.Map;
 
 public class OrangeHRMSteps {
@@ -242,12 +243,33 @@ public class OrangeHRMSteps {
 
 
 
+    }
 
 
 
+    @When("the user wants to login in list way")
+    public void the_user_wants_to_login_in_list_way(List<List<String>> dataTable) {
+
+        System.out.println("Username "+ dataTable.get(0).get(0));
+
+        //System.out.println("Password "+ dataTable.get(3).get(0));
+
+        WebElement username = Driver.getDriver().findElement(By.id("txtUsername"));
+        WebElement password = Driver.getDriver().findElement(By.id("txtPassword"));
+
+        username.sendKeys(dataTable.get(0).get(0));
+        password.sendKeys(dataTable.get(0).get(1));
+
+
+    }
+    @Then("The user wants to add an employee in a list way")
+    public void the_user_wants_to_add_an_employee_in_a_list_way(List<List<String>>  dataTable) {
 
 
 
+    }
+    @Then("The user wants to add login details in a list way")
+    public void the_user_wants_to_add_login_details_in_a_list_way(List<List<String>>  dataTable) {
 
     }
 

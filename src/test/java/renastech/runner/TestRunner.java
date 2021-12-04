@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features ="src/test/resources",
         glue = "renastech/Steps_Definitions",
-        tags = "@Mapping_TC2",
+        tags = "@List_TC1",
         dryRun= false             // it will check if there is undifianed staps definitions
 
 

@@ -47,9 +47,18 @@ public class OrangeHRMWithPOM {
     @Then("The user wants to add Nationalities as {string}")
     public void the_user_wants_to_add_nationalities_as(String name) {
         admin.setNationalityName(name);
+        admin.setSaveButton();
     }
     @And("The user should be able to see {string} in Nationality page")
     public void the_user_should_be_able_to_see_in_nationality_page(String string) {
-
+        admin.verifyNationality(string);
     }
+
+    @Then("The user wants to click all checkboxes")
+    public void the_user_wants_to_click_all_checkboxes() {
+        admin.clickAllCheckBoxes();
+    }
+
+
+
 }

@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features ="src/test/resources",
         glue = "renastech.Steps_Definitions",
-        tags = "@PageObjectModel",
+        tags = "@PageObjectModel2",
         dryRun= false             // it will check if there is undifianed staps definitions
 
 

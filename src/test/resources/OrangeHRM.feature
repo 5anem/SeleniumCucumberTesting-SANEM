@@ -136,7 +136,13 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
 
 
 
-
+  @PageObjectModel2
+    Scenario: Verify that we can click all the checkboxes are available
+      Given The user wants login as admin
+      Then The user wants to verify dashboard
+      When The user wants to go to admin
+      Then The user wants to go to Nationalities
+      Then The user wants to click all checkboxes
 
 
 

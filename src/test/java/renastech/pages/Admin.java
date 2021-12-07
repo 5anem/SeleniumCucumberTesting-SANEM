@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import renastech.utils.CommonUtils;
 import renastech.utils.Driver;
 
+import java.util.List;
+
 public class Admin {
 
     public Admin(){
@@ -25,6 +27,13 @@ public class Admin {
     @FindBy(xpath="//input[@type='text']")
     private WebElement nationalityName;
 
+    @FindBy(id = "btnSave")
+    private WebElement saveButton;
+
+
+    public void setSaveButton() {
+        CommonUtils.clickWithWait(saveButton);
+    }
 
     public void setNationality(){
         CommonUtils.clickWithWait(nationality);
@@ -48,10 +57,22 @@ public class Admin {
     }
 
 
+    public void clickAllCheckBoxes(){
+
+        List<WebElement> allCheckBoxes = Driver.getDriver().findElements(By.xpath("//input[contains(@id,'ohrmList_chkSelectRecord_') and @type='checkbox']"));
+
+        for (WebElement each: allCheckBoxes ) {
+
+            if(!each.isSelected()){
+                CommonUtils.clickWithWait(each);
+            }
+
+        }
 
 
 
 
+    }
 
 
 

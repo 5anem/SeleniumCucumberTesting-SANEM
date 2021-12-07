@@ -15,7 +15,7 @@ public class Home_Page {
     @FindBy(xpath = "//h1[contains(text(),'Dashboard')]")
     private WebElement dashboard;
 
-    @FindBy(xpath = "//b[.=‘Admin’]")
+    @FindBy(xpath = "//a[@id='menu_admin_viewAdminModule']/b")
     private WebElement admin;
 
 

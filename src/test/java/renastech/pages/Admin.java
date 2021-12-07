@@ -1,5 +1,7 @@
 package renastech.pages;
 
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -35,6 +37,17 @@ public class Admin {
     public void setNationalityName(String name){
         CommonUtils.enterText(nationalityName,name);
     }
+
+
+    public void verifyNationality(String name){
+
+        CommonUtils.hardWait(3000);
+        WebElement element = Driver.getDriver().findElement(By.xpath("//table[@id='resultTable']//a[contains(text(),'"+name+"')]"));
+        Assert.assertTrue(element.isDisplayed());
+
+    }
+
+
 
 
 

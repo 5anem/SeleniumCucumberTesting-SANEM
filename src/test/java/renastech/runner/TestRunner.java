@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features ="src/test/resources",
         glue = "renastech.Steps_Definitions",
-        tags = "@Hook",
+        tags = "@PageObjectModel",
         dryRun= false             // it will check if there is undifianed staps definitions
 
 
@@ -38,15 +38,6 @@ public class TestRunner {
      // TearDown --- Close the driver --- Quite the driver
      // ScrrenShot
      // Report
-
-
-
-
-
-
-
-
-
 
 
 

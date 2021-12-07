@@ -3,6 +3,7 @@ package renastech.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import renastech.utils.CommonUtils;
 import renastech.utils.Driver;
 
 public class Home_Page {
@@ -14,12 +15,18 @@ public class Home_Page {
     @FindBy(xpath = "//h1[contains(text(),'Dashboard')]")
     private WebElement dashboard;
 
+    @FindBy(xpath = "//b[.=‘Admin’]")
+    private WebElement admin;
+
 
     public WebElement getDashboard(){
         return dashboard;
     }
 
 
+    public void setAdmin(){
+        CommonUtils.clickWithWait(admin);
+    }
 
 
 

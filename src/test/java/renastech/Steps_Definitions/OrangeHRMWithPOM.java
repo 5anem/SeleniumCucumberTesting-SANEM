@@ -11,6 +11,7 @@ import renastech.utils.CommonUtils;
 
 public class OrangeHRMWithPOM {
 
+    Home_Page home = new Home_Page();
 
     @Given("The user wants login as admin")
     public void the_user_wants_login_as_admin() {
@@ -25,14 +26,13 @@ public class OrangeHRMWithPOM {
     @Then("The user wants to verify dashboard")
     public void the_user_wants_to_verify_dashboard() {
 
-        Home_Page home = new Home_Page();
         CommonUtils.hardWait(3000);
         Assert.assertTrue(home.getDashboard().isDisplayed());
 
     }
     @When("The user wants to go to admin")
     public void the_user_wants_to_go_to_admin() {
-
+        home.setAdmin();
     }
     @Then("The user wants to go to Nationalities")
     public void the_user_wants_to_go_to_nationalities() {

@@ -10,14 +10,14 @@ Feature:  This is a Smoke suite
 
 
 
-#  @Smoke_Testing
+  @Smoke_Testing
   Scenario: Verify That the Hooks works fine
     Given The user wants to login website
     Then the user wants to verify that we can login
 
 
 
-#   @Smoke_Testing
+   @Smoke_Testing
   Scenario:
     Given The user wants to go to orangeHRM application
     When The user wants to login orange HRM

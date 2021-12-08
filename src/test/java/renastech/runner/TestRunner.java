@@ -13,10 +13,11 @@ import org.junit.runner.RunWith;
         dryRun= false,             // it will check if there is undifianed staps definitions
         plugin ={  "pretty",
                     "html:target/default-cucumber-reports.html",
-                    "json:target/cucumber.json"
-
-
-        }
+                    "json:target/cucumber.json",
+                    "rerun:target/rerun.txt"
+        },
+        publish = true,       // It will share your HTML report in Cucumber server, you can see your report online
+        monochrome = true     // It will provide more details in the console
 
 
 )

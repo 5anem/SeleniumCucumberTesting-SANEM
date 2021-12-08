@@ -22,6 +22,7 @@ public class OrangeHRMSteps {
         System.out.println("This is a Login Step");
         Driver.getDriver().get("https://renastech-osondemand.orangehrm.com/");
         CommonUtils.hardWait(5000);
+      //  Assert.assertEquals("erkan","Erkann");
     }
     @When("The user wants to enter username and password")
     public void the_user_wants_to_enter_username_and_password() {
@@ -293,8 +294,9 @@ public class OrangeHRMSteps {
     @Then("the user wants to verify that we can login")
     public void the_user_wants_to_verify_that_we_can_login() {
         System.out.println("Test Test");
+        Assert.assertTrue(false);
 
-        CommonUtils.hardWait(5000);
+       // CommonUtils.hardWait(5000);
     }
 
 

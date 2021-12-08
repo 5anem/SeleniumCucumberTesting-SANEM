@@ -9,48 +9,17 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features ="src/test/resources",
         glue = "renastech.Steps_Definitions",
-        tags = "@PageObjectModel2",
-        dryRun= false             // it will check if there is undifianed staps definitions
+        tags = "@Smoke_Testing",
+        dryRun= false,             // it will check if there is undifianed staps definitions
+        plugin ={  "pretty",
+                    "html:target/default-cucumber-reports.html",
+                    "json:target/cucumber.json"
+
+
+        }
 
 
 )
 public class TestRunner {
 }
-
-
-
-// 2 things
-   // RunWith     -- > JUnit   -- Cucumber works with JUnit by default
-   // Cucumber options
-
-
-
-   // Before method
-   // Setup the Driver
-   // Max The Browser
-   // implicit wait
-   // we get the url
-
-
-
-
-   // After Method
-     // TearDown --- Close the driver --- Quite the driver
-     // ScrrenShot
-     // Report
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

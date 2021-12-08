@@ -16,7 +16,7 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
     And The user should be able to navigate dashboard
 
 
-   @ForFun   @Anything  @Regression  @Maping
+   @ForFun   @Anything  @Regression  @Maping @Mapping_TC234
    Scenario:
     Given The user wants to go to orangeHRM application
     When The user wants to enter username as "Admin" and the password as "Mv@UE0@dR3f@"
@@ -31,25 +31,10 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
 
 
 
-    # Data tables
-    @Maping
-   Scenario:
-      Given The user wants to go to orangeHRM application
-      When The user wants to login orange HRM
-           |Username | Admin      |
-           |Password |Mv@UE0@dR3f@|
-      Then The user wants to click login
-     And The user should be able to navigate dashboard
-      Then The user wants to go to PIM page
-      Then The user wants to see add employee page
-      Then The user wants to add an employee
-          |FirstName|Tom123  |
-          |LastName |Jerry123|
-      Then The user wants to save the information
-      Then The user should be able to see "Personal Details"
 
 
-    @Mapping_TC2
+
+    @Mapping_TC23
    Scenario: Verify that add new employee with login credentials
       Given The user wants to go to orangeHRM application
       When The user wants to login orange HRM
@@ -115,10 +100,7 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
     Given The user wants to login website
     Then the user wants to verify that we can login
 
-    @Hook
-   Scenario: Verify That the Hooks works fine
-      Given The user wants to login website
-      Then the user wants to verify that we can login
+
 
 
 

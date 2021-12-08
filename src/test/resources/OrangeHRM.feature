@@ -129,6 +129,22 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
 
 
 
+    @Scenario_Outline
+    Scenario Outline:
+      Given The user wants login as admin
+      Then The user wants to verify dashboard
+      When The user wants to go to admin
+      Then The user wants to go to Nationalities
+      Then The user wants to add new Nationalities
+      Then The user wants to add Nationalities as "<Nationalities>"
+
+      Examples:
+      |Nationalities|
+      |erk1234da    |
+      |erk312348    |
+
+
+
 
 
 

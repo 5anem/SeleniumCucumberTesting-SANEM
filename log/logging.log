@@ -26,3 +26,13 @@
 2021-12-09 19:47:14 INFO  Admin:49 - Add new Nationalities
 2021-12-09 19:47:16 INFO  Admin:39 - Clicked Save button
 2021-12-09 19:47:20 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 20:10:40 INFO  Hooks:29 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 20:10:49 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 20:27:07 INFO  Hooks:29 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 20:27:19 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 20:29:20 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 20:29:54 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 20:42:01 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 20:42:45 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 20:43:25 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 21:09:40 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)

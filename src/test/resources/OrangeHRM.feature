@@ -153,12 +153,20 @@ Feature:  We are creating this feature file to add Orange HRM Scenarios
 
 
 
+      # BDD                         -- Cucumber
+      #Keyword Driven Testing                                                      ---- Hybrid Framework
+      #Test Driven Testing             -- TestNG
+      # Data Driven Testing           -- Using External Files or data
+
+   # Apachi POI
 
 
 
 
-
-
+     @Excel
+    Scenario: Verify that we can login with excel data
+      Given the user wants to login with excel
+#      Then The user wants to verify dashboard
 
 
 

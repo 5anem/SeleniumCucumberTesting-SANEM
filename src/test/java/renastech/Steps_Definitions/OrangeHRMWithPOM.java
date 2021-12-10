@@ -5,11 +5,19 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import renastech.pages.Admin;
 import renastech.pages.Home_Page;
 import renastech.pages.Login_Page;
 import renastech.utils.CommonUtils;
+import renastech.utils.ExcelUtils;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class OrangeHRMWithPOM {
 
@@ -62,6 +70,38 @@ public class OrangeHRMWithPOM {
     public void the_user_wants_to_click_all_checkboxes() {
         admin.clickAllCheckBoxes();
     }
+
+
+    @Given("the user wants to login with excel")
+    public void the_user_wants_to_login_with_excel() throws IOException {
+
+//        String filePath="C:\\Users\\Erkan\\IdeaProjects\\SeleniumCucumberTesting\\src\\test\\resources\\New Microsoft Excel Worksheet.xlsx";
+//        FileInputStream fileInputStream = new FileInputStream(filePath);
+//        XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
+//        XSSFSheet sheet = workbook.getSheet("sheet1");
+//
+//        int rows = sheet.getLastRowNum();
+//        int cols = sheet.getRow(0).getLastCellNum();
+//
+//        XSSFRow row = sheet.getRow(2);
+//
+//        System.out.println(row.getCell(0));
+//        System.out.println(row.getCell(1));
+//
+////        System.out.println("The row number  "+rows);
+////        System.out.println("The columns number  "+cols);
+
+        ExcelUtils excelUtils = new ExcelUtils();
+        excelUtils.getCellData();
+
+
+
+
+
+    }
+
+
+
 
 
 

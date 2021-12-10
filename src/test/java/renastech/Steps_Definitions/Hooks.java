@@ -26,10 +26,10 @@ public class Hooks {
 
     @Before
     public void setup(Scenario scenario) {
-        logger.info("Logger example :   "+":::(^_^) TEST EXECUTION START (*_*)");
-        Driver.getDriver().manage().window().maximize();
-        Driver.getDriver().get(ConfigurationsReader.getProperty("url"));
-        Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+//        logger.info("Logger example :   "+":::(^_^) TEST EXECUTION START (*_*)");
+//        Driver.getDriver().manage().window().maximize();
+//        Driver.getDriver().get(ConfigurationsReader.getProperty("url"));
+//        Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
 

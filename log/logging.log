@@ -1,0 +1,28 @@
+2021-12-09 19:28:17 INFO  Hooks:30 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:28:43 INFO  Hooks:30 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:30:25 INFO  Hooks:30 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:30:50 INFO  Hooks:30 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:35:33 INFO  Hooks:29 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:35:41 INFO  OrangeHRMWithPOM:23 - The user wants login as admin
+2021-12-09 19:35:48 INFO  OrangeHRMWithPOM:36 - The dashboard is verified
+2021-12-09 19:35:57 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 19:35:57 INFO  Hooks:29 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:36:02 INFO  OrangeHRMWithPOM:23 - The user wants login as admin
+2021-12-09 19:36:11 INFO  OrangeHRMWithPOM:36 - The dashboard is verified
+2021-12-09 19:36:20 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 19:38:54 INFO  Hooks:29 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:39:02 INFO  OrangeHRMWithPOM:23 - The user wants login as admin
+2021-12-09 19:39:12 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 19:39:12 INFO  Hooks:29 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:39:18 INFO  OrangeHRMWithPOM:23 - The user wants login as admin
+2021-12-09 19:39:29 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 19:46:12 INFO  Hooks:29 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:46:19 INFO  OrangeHRMWithPOM:23 - The user wants login as admin
+2021-12-09 19:46:30 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)
+2021-12-09 19:46:52 INFO  Hooks:29 - Logger example :   :::(^_^) TEST EXECUTION START (*_*)
+2021-12-09 19:46:59 INFO  OrangeHRMWithPOM:23 - The user wants login as admin
+2021-12-09 19:47:08 INFO  OrangeHRMWithPOM:36 - The dashboard is verified
+2021-12-09 19:47:13 INFO  Admin:44 - Clicked add Nationalities
+2021-12-09 19:47:14 INFO  Admin:49 - Add new Nationalities
+2021-12-09 19:47:16 INFO  Admin:39 - Clicked Save button
+2021-12-09 19:47:20 INFO  Hooks:45 - :::(^_^) END OF TEST EXECUTION (*_*)

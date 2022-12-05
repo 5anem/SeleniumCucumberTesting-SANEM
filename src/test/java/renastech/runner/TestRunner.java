@@ -19,6 +19,19 @@ import org.junit.runner.RunWith;
 //        publish = true,       // It will share your HTML report in Cucumber server, you can see your report online
 //        monochrome = true     // It will provide more details in the console
 
+        //Before method
+        //Setup driver
+        //max the browser
+        //implicit wait
+        //we get the url
+
+        //After method
+        //TearDown ----- Close the driver ---- Quite the driver
+        //ScreenShot
+        //Report
+
+        //After ve Before methodun gerekcelerini Hooks classsta yapiyoruz
+
 
 )
 public class TestRunner {

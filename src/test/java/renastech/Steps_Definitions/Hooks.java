@@ -19,6 +19,7 @@ public class Hooks {
     //BeforeMethod
     // BeforeClass
     //Suite
+    //Yukaridaki 3 element junit kullandigimiza isaret
 
 
       private static final Logger logger = Logger.getLogger(Hooks.class);
